@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html ng-app="resumeApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="Alex Webster's resume">
+    <meta name="author" content="Alex Webster, ac.webster1990@gmail.com">
+    <meta name="keywords" content="Java,HTML,Javascript,Groovy,XML,Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Alex Webster's Resume</title>
+</head>
+<body>
+    <!-- Header -->
+
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">Alex Webster</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="container resume-container">
+        <primary-collapsible-panel title="Education" container-id="educationContainer">
+            <default-collapsible-panel title="Illinois Institute of Technology" container-id="iitContainer">
+                <span class="row">
+                    <span class="col-xs-6 col-sm-5 col-md-4">Illinois Institute of Technology (IIT) <a href="http://web.iit.edu/" target="_blank" class="glyphicon glyphicon-globe"></a></span>
+                    <span class="col-xs-3 col-sm-2">Chicago, IL</span>
+                    <span class="col-xs-3 col-sm-2">GPA: 3.4</span>
+                </span>
+                <span class="row">
+                    <span class="col-xs-4 col-sm-3">Bachelor of Science</span>
+                    <span class="col-xs-4 col-md-3">Electrical Engineering</span>
+                    <span class="col-xs-4 col-sm-3">2012</span>
+                </span>
+                <span class="row">
+                    <span class="col-xs-4 col-sm-3">Bachelor of Science</span>
+                    <span class="col-xs-4 col-md-3">Computer Engineering</span>
+                    <span class="col-xs-4 col-sm-3">2012</span>
+                </span>
+            </default-collapsible-panel>
+            <default-collapsible-panel title="McQuaid Jesuit High School" container-id="mcquaidContainer">
+                <span class="row">
+                    <span class="col-xs-6 col-sm-5 col-md-4">McQuaid Jesuit High School <a href="http://www.mcquaid.org/" target="_blank" class="glyphicon glyphicon-globe"></a></span>
+                    <span class="col-xs-3">Rochester, NY</span>
+                </span>
+                <span class="row">
+                    <span class="col-xs-4 col-sm-3">High School Diploma</span>
+                    <span class="col-xs-4 col-sm-3">2008</span>
+                </span>
+            </default-collapsible-panel>
+        </primary-collapsible-panel>
+        <primary-collapsible-panel title="Work Experience" container-id="workExpContainer">
+
+        </primary-collapsible-panel>
+        <primary-collapsible-panel title="Technologies" container-id="technologiesContainer">
+            <default-collapsible-panel title="Languages" container-id="languagesContainer">
+                   <ul>
+                       <li>Java</li>
+                       <li>Javascript</li>
+                       <li>Bash</li>
+                       <li>C/C++</li>
+                       <li>SQL</li>
+                       <li>Groovy</li>
+                       <li>Typescript</li>
+                       <li>PHP</li>
+                       <li>Various Assembly Languages</li>
+                       <li>Various Hardware Decription Languages</li>
+                   </ul>
+            </default-collapsible-panel>
+            <default-collapsible-panel title="Software" container-id="softwareContainer">
+                <ul>
+                    <li>Oracle Database</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Apache HTTPD</li>
+                    <li>Apache Tomcat</li>
+                    <li>Glassfish</li>
+                    <li>Node JS</li>
+                    <li>Express JS</li>
+                    <li>Jade</li>
+                    <li>Socket IO</li>
+                    <li>Angular JS</li>
+                    <li>JQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Postfix</li>
+                </ul>
+            </default-collapsible-panel>
+        </primary-collapsible-panel>
+        <primary-collapsible-panel title="Work Projects" container-id="workContainer">
+
+        </primary-collapsible-panel>
+        <primary-collapsible-panel title="Other Projects" container-id="projectContainer">
+            <project-panel title="Tiny Shell"
+                           container-id="tinyOtherProjectContainer"
+                           city="Chicago, IL"
+                           date="2011">
+                Developed a shell in C. Ran background and foreground processes. Handled signals for its children. Reaped all its children properly.
+            </project-panel>
+            <project-panel title="Mini Malloc"
+                           container-id="mallocOtherProjectContainer"
+                           city="Chicago, IL"
+                           date="2011">
+                Implemented version of the malloc library in C. Implemented the following functions:
+                <ul>
+                    <li><b>malloc: </b> to allocate a specified number of bytes</li>
+                    <li><b>realloc: </b> to resize a given block of memory and move it to a new space in memory if needed</li>
+                    <li><b>free: </b> to release a block of memory back to the system</li>
+                </ul>
+            </project-panel>
+            <project-panel title="Minecraft Mod"
+                           container-id="minecraftOtherProjectContainer"
+                           city="Chicago, IL"
+                           date="2011-2012">
+                Added some administrative and useful game features the to the popular game Minecraft.
+            </project-panel>
+            <project-panel title="Microcomputer Command Prompt"
+                           container-id="microcomputerOtherProjectContainer"
+                           city="Chicago, IL"
+                           date="2012">
+                Created a command interpreter in MC68K assembly language. Was able to start programs and display, modify, and move blocks of memory. Less than 3KB memory footprint.
+            </project-panel>
+            <project-panel title="RPGWeb"
+                           container-id="rpgOtherProjectContainer"
+                           city="Chicago, IL"
+                           date="2012-current">
+                Designed a web application in php to facilitate playing tabletop games with friends. Application includes support for a chat application using WebSockets and Node.js, and saving of certain data using AJAX php queries and a mysql backend. Currently redesigning to use nodejs and express to completely remove the php elements.
+            </project-panel>
+        </primary-collapsible-panel>
+    </div>
+
+    <!-- Scripts go here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
